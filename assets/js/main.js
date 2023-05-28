@@ -12,12 +12,6 @@ if(navToggle)
   })
 }
 
-const fadeOut = () => {
-  const loadWrapper = document.querySelector('.wrapper');
-  loadWrapper.classList.add('fade');
-}
-window.addEventListener('load', fadeOut);
-
 /*===== MENU HIDDEN =====*/
 /* validate if constant exists  */
 if(navClose)
