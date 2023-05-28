@@ -25,11 +25,14 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
     
+    <div id="loader"></div>
 
     <!--=============== BACK TO TOP ===============-->
     <!-- <a id="myBtn" onclick="topFunction()"><i class="fa-solid fa-arrow-up-long"></i></a> -->
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
@@ -397,6 +400,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

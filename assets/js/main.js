@@ -12,6 +12,17 @@ if(navToggle)
   })
 }
 
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
 /*===== MENU HIDDEN =====*/
 /* validate if constant exists  */
 if(navClose)
