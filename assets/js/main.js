@@ -1,6 +1,7 @@
 const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
       navClose = document.getElementById("nav-close")
+
       
 /*=============== SHOW MENU ===============*/
 /* validate if constant exists  */
@@ -10,6 +11,12 @@ if(navToggle)
     navMenu.classList.add("show-menu")
   })
 }
+
+const fadeOut = () => {
+  const loadWrapper = document.querySelector('.wrapper');
+  loadWrapper.classList.add('fade');
+}
+window.addEventListener('load', fadeOut);
 
 /*===== MENU HIDDEN =====*/
 /* validate if constant exists  */
