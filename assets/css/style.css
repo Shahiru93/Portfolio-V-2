@@ -511,6 +511,7 @@
     .education
     {
       flex: 0 0 50%;
+      align-items: start;
       max-width: 50%;
     }
     .experience
@@ -1553,9 +1554,6 @@
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
-  display: none;
-  text-align: center;
-}
+
 
     
