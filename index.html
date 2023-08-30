@@ -1,415 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="description" content="Full Stack Developer living in Sri Lanka. This is my personal portfolio where you can know about me.">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== LINE ICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shahiru Roshen</title>
-
-	<link rel="canonical" href="https://shahiru.vercel.app/" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body onload="myFunction()" style="margin:0;">
-    
-    <!--=============== LOADER ===============-->
-    <div id="loader"></div>
-
-    <!--=============== BACK TO TOP ===============-->
-    <!-- <a id="myBtn" onclick="topFunction()"><i class="fa-solid fa-arrow-up-long"></i></a> -->
-
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <!-- nav -->
-        <nav class="nav container padd-15">
-            <!-- nav logo -->
-            <a href="#home" class="nav-logo">
-                <h2>Shahiru</h2>
-            </a>
-            <!-- nav menu -->
-            <div class="nav-menu" id="nav-menu">
-                <!-- nav list -->
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://shahiru.hashnode.dev/" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <!-- nav close -->
-                <div class="nav-close" id="nav-close">
-                    <i class="lni lni-close"></i>
-                </div>
-            </div>
-            <!-- nav btn -->
-            <div class="nav-btns">
-                <!-- theme change btn -->
-                <i class="lni lni-pallet change-theme" id="theme-button"></i>
-                <!-- toggle btn -->
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="lni lni-grid-alt"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main-content">
-        <!--=============== HOME ===============-->
-        <section class="home" id="home">
-            <div class="container">
-                <!-- intro -->
-                <div class="intro">
-                    <!-- avatar image -->
-                    <img src="assets/img/shahiru.svg" alt="Character">
-                    <!-- info -->
-                    <h1>Shahiru Roshen</h1>
-                    <span class="info-text">Full Stack Developer 💻</span>
-                    <br>
-                    <span class="info-text">From Sri Lanka 🇱🇰</span>
-                    <!-- social icons -->
-                    <ul class="social-icons">
-                        <li><a href="https://github.com/Shahiru93"><i class="lni lni-github-original"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/shahiru93"><i class="lni lni-linkedin-original"></i></a></li>
-                        <li><a href="https://www.instagram.com/shahiru.93"><i class="lni lni-instagram-original"></i></a></li>
-                        <!-- <li><a href="https://www.facebook.com/shahiru93"><i class="lni lni-facebook-original"></i></a></li> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--=============== About ===============-->
-        <section class="about section" id="about">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">About Me</h2>
-                <div class="row">
-                    <div class="about-img padd-15">
-                        <!-- avatar img -->
-                        <img src="assets/img/shahiru1.svg" style="width:150px; height:150px; border-radius: 50%;" alt="Character">
-                    </div>
-                    <div class="about-content padd-15">
-                        <div class="rounded">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <!-- about text -->
-                                    <p>The combination of my passion for design, code & interaction positions me in a unique place in the development world and I love to learn new technologies to move forward along with the world.</p>
-                                    <div>
-                                        <a href="#contact" class="btn btn-default">CONTACT ME</a>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4>Mobile Development</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 90%; background: rgb(255,209,92);"></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4>Web Development</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%; background: rgb(255,76,96);"></div>
-                                                <div class="skill-percent">80%</div>
-                                            </div>
-                                        </div>
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4>UI/UX design</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 65%; background: rgb(108,108,229);"></div>
-                                                <div class="skill-percent">65%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        
-        <!--=============== Experience ===============-->
-        <section class="section" id="experience">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Experience</h2>
-                <div class="row">
-                    <!-- education -->
-                    <div class="education padd-15">
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019 - 2023
-                                        </h3>
-                                        <h3 class="timeline-title">Undergraduate</h3>
-                                        <p class="timeline-text">BEng(Hons) Software Engineering</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- experience -->
-                    <div class="experience padd-15">
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2021 - present
-                                        </h3>
-                                        <h3 class="timeline-title">Full Stack Developer</h3>
-                                        <p class="timeline-text">Syeta Labs, Sri Lanka</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== Portfolio ===============-->
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Portfolio</h2>
-                <div class="row">
-                    <div class="portfolio-filter padd-15">
-                        <div class="portfolio-filter-inner">
-                            <button type="button" class="active" data-filter="all">Everything</button>
-                            <button type="button" data-filter="web">Web</button>
-                            <button type="button" data-filter="mobile">Mobile</button>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="web">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="assets/img/newwork3.jpg" alt="Salon Nimroo">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Web Development</span>
-                            <h3 class="portfolio-item-title">Web Site for Salon Nimroo</h3>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="mobile">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="assets/img/newwork5.jpg" alt="Kiddo Check">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Mobile Application</span>
-                            <h3 class="portfolio-item-title">Sinhala handwritten character mistake finding app</h3>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="web">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="assets/img/newwork1.jpg" alt="Colours Cart">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Web Development</span>
-                            <h3 class="portfolio-item-title">Web Site for Colours Cart</h3>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="mobile">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="assets/img/newwork6.jpg" alt="Weather App">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Mobile Application</span>
-                            <h3 class="portfolio-item-title">IOS Weather Application</h3>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="web">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="assets/img/newwork2.jpg" alt="Fashion Store">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Web Development</span>
-                            <h3 class="portfolio-item-title">Online fashion store</h3>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="mobile">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="assets/img/newwork7.jpg" alt="Movie App">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Mobile Application</span>
-                            <h3 class="portfolio-item-title">Movie rating app</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Contact ===============-->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Contact me</h2>
-                <div class="row">
-                    <!-- contact box -->
-                    <div class="contact-box padd-15">
-                        <div class="contact-data">
-                            <!-- contact information -->
-                            <div class="contact-information">
-                                <h3 class="contact-subtitle">Call me for instant support</h3>
-                                <span class="contact-description">
-                                    <i class="lni lni-phone contact-icon"></i>
-                                    +94 77 0097 728
-                                </span>
-                            </div>
-                             <!-- contact information -->
-                             <div class="contact-information">
-                                <h3 class="contact-subtitle">Write me by mail</h3>
-                                <span class="contact-description">
-                                    <i class="lni lni-user contact-icon"></i>
-                                    shahiruqw93@gmail.com
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- contact form -->
-                    <form action="https://formbold.com/s/9EEgr" method="POST" class="contact-form padd-15" onsubmit="this.submit(); this.reset(); return false;">
-                        <div class="contact-inputs">
-                            <!-- contact content -->
-                            <div class="contact-content">
-                                <input type="email" name="email" class="contact-input" placeholder="E-mail" required>
-                                <span></span>
-                            </div>
-                            <!-- contact content -->
-                            <div class="contact-content">
-                                <input type="text" name="subject" placeholder="Subject" class="contact-input" required>
-                                <span></span>
-                            </div>
-                            <!-- contact content -->
-                            <div class="contact-content contact-area">
-                                <textarea name="message" cols="30" placeholder="Message" rows="10" class="contact-input" required></textarea>
-                                <span></span> 
-                            </div>
-                            <input type="hidden" name="_autoresponse" value="Thank you for contacting us!">
-                        </div>
-                        <input type="submit" name="submit" class="contact-form-btn" />
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!--=============== Footer ===============-->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-text padd-15">
-                    <p>2023 &copy; Edition</p>
-                </div>
-            </div>
-        </footer>
-    </main>
-    <!--=============== Theme Customize ===============-->
-    <div class="customize-theme">
-        <div class="card">
-            <h2>Customize your view</h2>
-            <p>Manage your font size, color, and background</p>
-            <!-- font size -->
-            <div class="font-size">
-                <h3>Font Size</h3>
-                <div>
-                    <h6>Aa</h6>
-                    <div class="choose-size">
-                        <span class="font-size-1"></span>
-                        <span class="font-size-2"></span>
-                        <span class="font-size-3 active"></span>
-                        <span class="font-size-4"></span>
-                    </div>
-                    <h3>Aa</h3>
-                </div>
-            </div>
-            <!-- color -->
-            <div class="color">
-                <h3>Color</h3>
-                <div class="choose-color">
-                    <span class="color-1"></span>
-                    <span class="color-2"></span>
-                    <span class="color-3 active"></span>
-                    <span class="color-4"></span>
-                    <span class="color-5"></span>
-                </div>
-            </div>
-            <!-- background -->
-            <div class="background">
-                <h3>background</h3>
-                <div class="choose-bg">
-                    <div class="bg-1 active">
-                        <span></span>
-                        <h5 for="bg-1">Light</h5>
-                    </div>
-                    <div class="bg-2">
-                        <span></span>
-                        <h5 for="bg-2">Dim</h5>
-                    </div>
-                    <div class="bg-3">
-                        <span></span>
-                        <h5 for="bg-3">Dark</h5>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Shahiru</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Shahiru</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </div>
-</div>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    
-    <!--=============== JS ===============-->
-    <script src="assets/js/main.js"></script>
-
-    <!--=============== FONT AWESOME ===============-->
-    <script src="https://kit.fontawesome.com/610e6dd438.js" crossorigin="anonymous"></script>
-    
-</body>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shahiru Roshen</h1>
+        <p class="section__text__p2">Full-Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume - Shahiru Wijerathna.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/shahiru93/'"
+          />
+          <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/Shahiru93'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience_light.png"
+                src-light="./assets/experience_light.png"
+                src-dark="./assets/experience_dark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Full-Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education_light.png"
+                src-light="./assets/education_light.png"
+                src-dark="./assets/education_dark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BEng (Hons) in Software Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: center;">
+              Hey there!, a versatile full-stack software engineer. I specialize in crafting seamless, user-centric applications by merging front-end finesse with back-end robustness. With a knack for optimizing performance and a passion for problem-solving, I thrive in collaborative environments. Beyond coding, I stay ahead of the curve by exploring new technologies and staying active in the developer community. Let's connect and collaborate on transforming ideas into impactful software solutions that push the boundaries of innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VUE JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NUXT JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Salon Nimroo</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://salonnimroo.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Swift Weather</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Shahiru93/Swift-Weather'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Shahiru93/Bowling-Action-Analysis'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.png"
+            src-light="./assets/email_light.png"
+            src-dark="./assets/email_dark.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:shahiruqw93@gmail.com">shahiruqw93@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/shahiru93/'"
+          />
+          <p><a href="https://www.linkedin.com/in/shahiru93/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Shahiru Roshen. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
