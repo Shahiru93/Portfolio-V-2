@@ -51,3 +51,6 @@ function setLightMode() {
     icon.src = icon.getAttribute("src-light");
   });
 }
+
+var currentYear = new Date().getFullYear();
+document.getElementById('copyright').innerHTML = 'Copyright &#169; ' + currentYear + ' Shahiru Roshen. All Rights Reserved.';
