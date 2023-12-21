@@ -52,5 +52,28 @@ function setLightMode() {
   });
 }
 
+var preloaderWords = ["Hello", "ආයුබෝවන්", "வணக்கம்", "नमस्ते", "Hola", "안녕하세요", "Γειά σου", "Bonjour", "مرحبًا", "Hallo", "नमस्कार"];
+var currentWordIndex = 0;
+
+function hidePreloader() {
+  var preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+}
+
+function updatePreloaderWord() {
+  var preloaderText = document.getElementById('preloader-text');
+  preloaderText.innerText = preloaderWords[currentWordIndex];
+  currentWordIndex = (currentWordIndex + 1) % preloaderWords.length;
+}
+
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    hidePreloader();
+  }, 4000);
+
+  setInterval(updatePreloaderWord, 250);
+});
+
+
 var currentYear = new Date().getFullYear();
 document.getElementById('copyright').innerHTML = 'Copyright &#169; ' + currentYear + ' Shahiru Roshen. All Rights Reserved.';
