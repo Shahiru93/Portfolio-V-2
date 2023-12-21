@@ -52,7 +52,7 @@ function setLightMode() {
   });
 }
 
-var preloaderWords = ["Hello", "ආයුබෝවන්", "வணக்கம்", "नमस्ते", "Hola", "안녕하세요", "Γειά σου", "Bonjour", "مرحبًا", "Hallo", "नमस्कार"];
+var preloaderWords = ["Hello", "ආයුබෝවන්", "வணக்கம்", "नमस्ते", "Hola", "안녕하세요", "Γειά σου", "Bonjour", "مرحبًا", "Hallo", ""];
 var currentWordIndex = 0;
 
 function hidePreloader() {
@@ -69,9 +69,9 @@ function updatePreloaderWord() {
 window.addEventListener('load', function () {
   setTimeout(function () {
     hidePreloader();
-  }, 4000);
+  }, 3600);
 
-  setInterval(updatePreloaderWord, 250);
+  setInterval(updatePreloaderWord, 300);
 });
 
 
